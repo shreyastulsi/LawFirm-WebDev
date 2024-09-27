@@ -301,8 +301,12 @@ a:focus {
       -ms-flex-align: center;
           align-items: center;
   background-size: cover;
+  background-image: url("/Users/shreyastulsi/Downloads/inance-html/images/back.jpg");
   background-position: bottom;
+  color: white;
 }
+
+
 
 .slider_section .row {
   -webkit-box-align: center;
@@ -443,7 +447,10 @@ a:focus {
       -ms-flex-align: center;
           align-items: center;
 }
-
+.middle-container{
+  display: flex;
+  flex-direction: row;
+}
 .about_section .detail-box h2 {
   text-transform: uppercase;
   font-weight: bold;
@@ -602,7 +609,9 @@ a:focus {
   border-radius: 0;
   color: #ffffff;
 }
-
+.service_section{
+  padding: 0px;
+}
 .service_section .btn-box a:hover {
   background-color: transparent;
   color: #0355cc;
@@ -635,7 +644,7 @@ a:focus {
 }
 
 .client_section .box .client_id .img-box img {
-  width: 100%;
+  
   border-radius: 100%;
 }
 
@@ -666,6 +675,8 @@ a:focus {
 .client_section .box .client_text {
   margin-top: 20px;
 }
+
+
 
 .client_section .owl-carousel .owl-nav {
   display: -webkit-box;
@@ -798,6 +809,7 @@ a:focus {
   position: relative;
 }
 
+
 .info_items .item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -873,5 +885,18 @@ a:focus {
   color: inherit;
 }
 
+.service_section{
+  margin-left: 15px;
+}
+
 /* end footer section*/
 /*# sourceMappingURL=style.css.map */
+
+.user-testimonial{
+  padding:10px;
+  text-align: center;
+  height: 50px;
+}
+.client_section{
+  margin-top: 80px;
+}
