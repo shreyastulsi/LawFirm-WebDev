@@ -14,10 +14,13 @@ body{
   padding-bottom: 120px;
 }
 .cards-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
   gap: 20px;
   padding: 20px;
+  
   width: 100%;
 
 }
@@ -25,6 +28,7 @@ body{
   background: white;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   padding: 0;
+  max-width: 400px;
   border-radius: 8px;
   overflow: hidden;
 }
@@ -145,10 +149,10 @@ a:focus {
 }
 
 .testimonial {
-  margin-top: 20px;
+  margin-top: 60px;
   font-size: 16px;
   color: #555;
-  border-left: 4px solid #007BFF;
+  border-left: 4px solid #dbca73;
   padding-left: 20px;
   margin-bottom: 20px;
 }
@@ -385,6 +389,12 @@ a:focus {
   background-position: bottom;
   color: white;
 }
+.background-tint {
+  background-color: rgba(200,100,0,.5);
+  background-blend-mode: multiply;
+}
+
+
 .slider_section_2 {
   display: flex;
   flex-direction: row;
@@ -588,6 +598,9 @@ a:focus {
   background-color: #dbca73;
   color: #ffffff;
 }
+.box{
+  background-color: white;
+}
 
 .feature_section .feature_container .box:hover .img-box svg, .feature_section .feature_container .box.active .img-box svg {
   fill: #ffffff;
@@ -640,9 +653,10 @@ a:focus {
   height: 80vh;
 }
 .image-section{
-  padding: 10px;
+
   margin: 5px;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
 
@@ -845,6 +859,10 @@ body{
   display: flex;
 }
 
+.client_section{
+  background-color: white;
+  padding: 60px;
+}
 .client_section .box .client_id .img-box {
   width: 125px;
   min-width: 125px;
@@ -1153,6 +1171,7 @@ body{
   padding-left: 100px;
   padding-top: 100px;
   padding-right: 120px;
+  background-color: white;
 }
 
 .left-content {
@@ -1214,10 +1233,14 @@ body{
 }
 
 .about_list{
-  list-style-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23DBCA73"><path d="M9 19c-.26 0-.51-.1-.71-.29l-6-6A.996.996 0 1 1 3.7 11.3l5.29 5.29L20.28 5.3a.996.996 0 1 1 1.41 1.41l-12 12c-.2.2-.45.29-.71.29Z"></path></svg>')
+  list-style-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23FFBA1F"><path d="M9 19c-.26 0-.51-.1-.71-.29l-6-6A.996.996 0 1 1 3.7 11.3l5.29 5.29L20.28 5.3a.996.996 0 1 1 1.41 1.41l-12 12c-.2.2-.45.29-.71.29Z"></path></svg>');
 }
 .about_list::marker{
   font-size: 1.8em;
   
 
+}
+
+.proj-head{
+  margin-top: 40px;
 }
