@@ -168,6 +168,7 @@ a:focus {
 .hero_area {
   position: relative;
   background-color: #d1e3ff;
+  box-shadow: 10px 10px 20px rgb(120, 114, 114);
 }
 
 .header_section .container-fluid {
@@ -458,9 +459,13 @@ a:focus {
 
 }
 
+a {
+  color: black;
+}
+
 .slider_section_2 h1{
   color: #dbca73;
-}
+} 
 
 
 .slider_section .row {
@@ -677,6 +682,9 @@ a:focus {
 .container-bb h1{
   color: black;
 }
+
+
+
 .image-section{
 
   margin: 5px;
@@ -1205,6 +1213,9 @@ body{
 .left-content {
   flex: 1; /* Takes up more space */
   padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .right-content {
@@ -1242,13 +1253,14 @@ body{
   font-weight: bold;
   margin-bottom: 20px;
   padding-bottom: 10px;
+  text-align: left;
   
 }
 
 .underline-heading::after {
   content: '';
   display: block;
-  width: 600px; /* Adjust the length of the underline */
+  width: 800px; /* Adjust the length of the underline */
   height: 5px; /* Adjust the thickness of the underline */
   background-color: #dbca73; /* Gold underline */
   position: absolute;
@@ -1260,6 +1272,11 @@ body{
   width: 800px;
 }
 
+
+
+.important-text{
+  width: 800px;
+}
 .about_list{
   list-style-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23FFBA1F"><path d="M9 19c-.26 0-.51-.1-.71-.29l-6-6A.996.996 0 1 1 3.7 11.3l5.29 5.29L20.28 5.3a.996.996 0 1 1 1.41 1.41l-12 12c-.2.2-.45.29-.71.29Z"></path></svg>');
 }
@@ -1277,7 +1294,7 @@ body{
 /* Overall Section Styles */
 .blog_section {
  
-  background-color: #fff;
+
   padding: 40px 0;
 }
 
